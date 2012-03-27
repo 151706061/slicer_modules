@@ -48,17 +48,17 @@ if(NOT Slicer_SOURCE_DIR)
   include(SlicerEnableExtensionTesting)
 endif()
 
-#-----------------------------------------------------------------------------
-# Add new subdirectory
-#-----------------------------------------------------------------------------
-ADD_SUBDIRECTORY(Wizard)
-
 
 #-----------------------------------------------------------------------------
 # Sources
 #-----------------------------------------------------------------------------
 set(KIT_PYTHON_SCRIPTS
   MRIChangeDetector.py
+  Wizard/__init__.py
+  Wizard/Helper.py
+  Wizard/MRIChangeDetectorStep.py
+  Wizard/SelectVolumesStep.py
+  Wizard/RegistrationStep.py
   )
 
 set(KIT_PYTHON_RESOURCES
